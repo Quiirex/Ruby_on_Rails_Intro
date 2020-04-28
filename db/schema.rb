@@ -12,14 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20200427220513) do
 
-  create_table "narocniks", force: :cascade do |t|
-    t.string "ime"
-    t.string "priimek"
-    t.string "enaslov"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "subscribers", force: :cascade do |t|
     t.string "ime"
     t.string "priimek"
