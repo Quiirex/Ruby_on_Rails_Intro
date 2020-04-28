@@ -1,24 +1,20 @@
-# README
+# Ruby on Rails intro website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Spletna stran za seminarsko nalogo
 
-Things you may want to cover:
+## Instalacija
 
-* Ruby version
+Clone repo in pull po potrebi.
 
-* System dependencies
+```bash
+bundle install
+```
+```bash
+rails s
+```
+```bash
+http://localhost:3000
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Licenca
+[MIT](https://choosealicense.com/licenses/mit/)
