@@ -4,7 +4,7 @@ Spletna stran za seminarsko nalogo
 
 ## Instalacija
 
-Clone repo in pull po potrebi.
+Clone repo in pull pred vsakim zagonom (če je na voljo).
 
 ```bash
 bundle install
