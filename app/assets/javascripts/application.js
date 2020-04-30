@@ -19,7 +19,4 @@
 
 $(window).ready(function(){
     console.clear(); // To da se errori nea videjo no večina lol fucking chorme plugini
-
-    var datum = new Date(); // For some reason more bit v window ready funkciji, drugače ga sploh ne bere
-    document.getElementById("datetime").innerHTML = datum.toLocaleString();
 });
