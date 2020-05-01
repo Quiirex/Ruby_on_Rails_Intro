@@ -1,3 +1,66 @@
-<h1 class="display-4">Test</h1>
-<p class="h4"> Vse informacije, glede spletnega ogrodja Ruby on Rails  </p>
-<p class="h5"> Naročite se na naš portal in dobite najbolj sveže novice! </p>
+<div class="text-center">
+    <h1 class="display-4">Programski jezik Ruby</h1>
+    <p>Ruby je tolmačen, splošni programski jezik na visoki ravni. Sredi devetdesetih let prejšnjega stoletja ga je zasnoval in razvil Yukihiro "Matz" Matsumoto na Japonskem.</p>
+        <h3>Sintaksa</h3>
+        <div>
+            <p>
+                Sintaksa programskega jezika Ruby je na splošno podobna Perl-u in Python-u. Opredelitve razredov in metod signalizirajo ključne besede, medtem ko lahko kodne bloke definiramo s ključnimi besedami ali oklepaji. V nasprotju s Perlom spremenljivke niso obvezno označene s sigil-om (simbolom). Sigil spremeni semantiko obsega spremenljivke. Za praktične namene ni nobene razlike med izrazi in stavki. Prelomi vrstic so pomembni in jih jemljemo kot konec izjave; podpičje se lahko uporablja enako. Za razliko od Pythona, vdolbine niso pomembne.
+Ena od razlik Python-a in Perl-a je, da Ruby ohranja vse svoje spremenljivke primerkov popolnoma zasebne razredu in jih izpostavi le s pomočjo t.i. »accessor« metod (attr_writer, attr_reader itd.). Za razliko od metod "getter" in "setter" iz drugih jezikov, kot so C++, C# in Java, lahko metode v Ruby-u ustvarite z eno vrstico kode s pomočjo meta-programiranja; vendar pa je mogoče na tradicionalen način C++ in Java ustvariti tudi metode dostopa. Ker za priklic teh metod ni treba uporabiti oklepajev, je nepomembno spremeniti spremenljivko primerka v celotno funkcijo, ne da bi spremenili eno vrstico klicne kode ali da bi morali opraviti »refaktoring«, ki bi dosegel podobno funkcionalnost kot lastnosti metod C # in VB.NET.
+Deskriptorji lastnosti Pythona so podobni, vendar so v razvojnem procesu kompromitirani. Če začnete v Python-u z uporabo javno izpostavljene spremenljivke primerka in pozneje spremenite implementacijo v zasebno spremenljivko primerka, ki je izpostavljena prek deskriptorja lastnosti, bo morda koda, ki je znotraj razreda, prilagojena uporabi zasebne spremenljivke in ne javne lastnosti . Rubyjev dizajn prisili, da so vse spremenljivke primerka zasebne, hkrati pa ponuja tudi preprost način za nastavljanje »set« in »get« metod. To je v skladu z mislijo, da v Rubyju nekdo neposredno ne dostopa do notranjih članov razreda zunaj razreda; raje eden preda sporočilo razredu in prejme odgovor.
+
+            </p>
+        </div>
+        <h3>Semantika</h3>
+        <div>
+            <p>
+                Ruby je objektno naravnan programski jezik, pri katerem je vsaka vrednost objekt, vključno z razredi in primerki vrst, ki jih mnogi drugi jeziki označujejo kot primitivne (npr. Cela števila (integerji), booleani in "null" tipi). Spremenljivke vedno vsebujejo reference na predmete. Vsaka funkcija je metoda in metode se vedno kličejo nad predmet. 
+Metode, definirane na zgornjem nivoju, postanejo metode razreda Object. Ker je ta razred prednik vseh drugih razredov, se takšne metode lahko izvajajo na katerem koli predmetu. Vidni so tudi v vseh področjih uporabe, saj učinkovito delujejo kot "globalni" postopki. 
+Ruby podpira dedovanje z dinamičnimi metodami odpreme, mixin-i in singleton metodami (ki pripadajo in so definirani za en primerek, ne pa da so definirani v razredu). Čeprav Ruby ne podpira večkratnega dedovanja, lahko razredi uvažajo module kot mixin-e.
+Ruby je opisan kot programski jezik z več paradigmi: omogoča proceduralno programiranje (določanje funkcij / spremenljivk zunaj razredov jih ustvari kot del korenskega imenika, 'self' Object), z orientacijo objekta (vse je objekt) ali funkcionalnim programiranjem (vsebuje anonimne funkcije, zapiranje in nadaljevanja; vse izjave imajo vrednosti, funkcije pa vrnejo zadnjo oceno). Ima podporo za introspekcijo, refleksijo in meta-programiranje, ter podporo za niti, ki temeljijo na tolmaču. Ruby odlikuje dinamično tipkanje in podpira parametrični polimorfizem.
+Glede na Ruby »FAQ« je sintaksa podobna Perlu, semantika pa je podobna Smalltalku, vendar se močno razlikuje od Pythona.
+
+            </p>
+        </div>
+        <h3>Ruby dragulji (gem)</h3>
+        <div>
+            <p>
+                Vsak dragulj (gem) ima ime, različico in platformo. Na primer, dragulj Rake ima različico 0.8.7 (od maja 2009). Rakeova platforma je rubinirana, kar pomeni, da deluje na kateri koli platformi, na kateri deluje Ruby.
+Platforme temeljijo na arhitekturi procesorja, vrsti operacijskega sistema in včasih različici operacijskega sistema. Primeri vključujejo „x86-mingw32“ ali „java“. Platforma označuje, da dragulj (gem) deluje samo z Rubyjem, ki je zgrajen za isto platformo. RubyGems bo samodejno prenesel pravilno različico za vašo platformo. Za podrobnosti glejte platformo za pomoč pri draguljih. V notranjosti draguljev so naslednje komponente:
+<div class="text-left">
+<ul>
+    <li>Koda (vključno s testi in podpornimi pripomočki)</li>
+    <li>Dokumentacija</li>
+    <li>»Gemspec«</li>
+</ul>
+</div>
+            </p>
+        </div>
+        <h3>Ruby on Rails</h3>
+        <div>
+            <p>
+                Kot druga spletna ogrodja tudi Ruby on Rails uporablja vzorec model-pogled-krmilnik (MVC) za organizacijo aplikacijskega programiranja.
+V privzeti konfiguraciji se model v ogrodju Ruby on Rails preslika v tabelo v bazi podatkov in v datoteko Ruby. Na primer, model »uporabnik« bo običajno določen v datoteki 'uporabnik.rb' v imeniku aplikacij / modelov in povezan s tabelo 'uporabniki' v bazi podatkov. Medtem ko razvijalci lahko prezrejo to konvencijo in izberejo različna imena za svoje modele, datoteke in tabelo baze podatkov, to ni običajna praksa in se večinoma odvrne v skladu s filozofijo "konvencija nad konfiguracijo".
+Krmilnik je komponenta na strani strežnika (server side), ki se odziva na zunanje zahteve spletnega strežnika do aplikacije, tako da določi, katero datoteko prikazovati. Krmilnik bo morda moral poizvediti enega ali več modelov za informacije in jih posredovati v pregled. Na primer, v sistemu rezervacij letalskih prevoznikov bi moral upravljavec, ki izvaja funkcijo iskanja letenja, poiskati model, ki predstavlja posamezne lete, da bi našel lete, ki ustrezajo iskanju, in morda bi moral poizvedovati tudi modele, ki predstavljajo letališča in letalske družbe, da bi našli ustrezne sekundarne podatke. 
+Krmilnik lahko nato posreduje nekaj podmnožic podatkov o letu v ustrezen pogled, ki bi vseboval mešanico statičnega HTML-ja in logike, ki uporablja podatke o letu za ustvarjanje dokumenta HTML in vsebuje tabelo z eno vrstico za en let. Krmilnik lahko izvede eno ali več dejanj. V Ruby on Rails je dejanje običajno osnovna enota, ki opisuje, kako odgovoriti na določeno zunanjo zahtevo spletnega brskalnika. Upoštevajte tudi, da bo krmilnik / dejanje dostopno za zunanje spletne zahteve samo, če je nanj preslikana ustrezna pot. Rails spodbuja razvijalce, naj uporabljajo RESTful poti, ki vključujejo dejanja, kot so ustvarjanje, urejanje, posodabljanje, odstranjevanje, prikazovanje in indeksiranje. Te preslikave dohodnih zahtev / poti do dejanj krmilnika je mogoče enostavno nastaviti v konfiguracijski datoteki route.rb.
+Pogled (view) v privzeti konfiguraciji Rails je datoteka »erb«, ki jo med izvajanjem oceni in pretvori v HTML. Za poglede se lahko uporabljajo tudi številni drugi sistemi za predloge.
+Ruby on Rails vključuje orodja, ki olajšajo običajne razvojne naloge "out-of-the-box", kot so odri (scaffoldi), ki lahko samodejno izdelajo nekatere modele in poglede, potrebne za osnovno spletno mesto. Vključena sta tudi WEBrick, preprost spletni strežnik Ruby, ki se distribuira z Rubyjem, in Rake, sistem gradnje, ki se distribuira kot »gem«. Ta orodja skupaj z Ruby on Rails zagotavljajo osnovno razvojno okolje.
+Ruby on Rails se najpogosteje ne poveže z internetom neposredno, ampak prek nekega vmesnega spletnega strežnika. Razvijalci so raje uporabljali spletni strežnik »Mongrel«, kot »WEBrick« v zgodnjih dneh, vendar je deloval oz. deluje tudi na »Lighttpd«, »Apache«, »Cherokee«, »Hiawatha«, »Nginx« in mnogi drugi. Od leta 2008 naprej je »Passenger« zamenjal »Mongrel« kot najbolj uporabljani spletni strežnik za Ruby on Rails.
+
+            </p>
+        </div>
+        <h3>Struktura Ruby on Rails ogrodja</h3>
+        <div>
+            <p>
+                Ruby on Rails je ločen v različne pakete, in sicer v ActiveRecord (objektno-relacijski sistem preslikave za dostop do baze podatkov), Action Pack, Active Support in Action Mailer. Pred različico 2.0 je Ruby on Rails vključil tudi paket spletnih storitev Action, ki ga zdaj nadomešča Active Resource. Razen standardnih paketov lahko razvijalci izdelajo vtičnike za razširitev obstoječih paketov. Prejšnji Rails so podpirali vtičnike v svojem lastnem okviru; različica 3.2 jih zaničuje v prid standardnim Rubyjevim »gemom«.
+            </p>
+        </div>
+        <h3>Uvajanje Ruby on Rails ogrodja</h3>
+        <div>
+            <p>
+                Ruby on Rails se pogosto namesti z RubyGems, upravljalcem paketov, ki je vključen v trenutne različice Ruby. Številni brezplačni Unix-u podobni sistemi prav tako podpirajo namestitev Ruby on Rails in njegovih »odvisnosti« (dependencies) prek matičnega sistema za upravljanje paketov.
+Ruby on Rails je običajno nameščen s strežnikom baze podatkov, kot sta MySQL ali PostgreSQL in spletnim strežnikom, kot je Apache, ki izvaja modul Phusion Passenger.
+
+            </p>
+        </div>
+        <br /><br />
+</div>
